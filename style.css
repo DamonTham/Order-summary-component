@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+}
+
+.card {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+.card-heading {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+.order-text {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.plan-icon-left {
+  display: flex;
+}
+
+.plan-icon-left img {
+  padding: 0 10px;
+}
+
+.plan-heading {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 0.85rem;
+}
+
+.plan-text {
+  font-size: 0.85rem;
+  padding-top: 5px;
+}
+
+.plan a {
+  font-size: 0.75rem;
+  color: hsl(245, 75%, 52%);
+  padding-right: 10px;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+
+.plan a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.5);
+  transition: 0.1s ease-in-out;
+}
+
+button {
+  margin: 20px 0 0;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  background-color: #fff;
+  transition: 0.1s ease-in-out;
+}
+
+.payment {
+  margin-top: 30px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0 7px 15px hsl(0, 0%, 73%);
+}
+
+.payment:hover {
+  background-color: hsla(245, 75%, 52%, 0.5);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
